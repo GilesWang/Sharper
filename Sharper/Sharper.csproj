@@ -40,9 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attributes\DataFieldAttribute.cs" />
+    <Compile Include="Attributes\FieldAttribute.cs" />
+    <Compile Include="Attributes\TableAttribute.cs" />
     <Compile Include="Extensions\SqlDataReaderExt.cs" />
+    <Compile Include="Extensions\SqlDateTiemExt.cs" />
+    <Compile Include="Extensions\SqlStringExt.cs" />
+    <Compile Include="IModel.cs" />
+    <Compile Include="IValidate.cs" />
+    <Compile Include="ModelBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="Repository\Repository.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

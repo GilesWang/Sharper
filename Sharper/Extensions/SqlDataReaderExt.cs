@@ -93,13 +93,13 @@ namespace Sharper.Extensions
             return res;
         }
 
-        private static string GetFieldName(this PropertyInfo property)
+        public static string GetFieldName(this PropertyInfo property)
         {
             var code = property.GetHashCode();
             if (!fieldNameCache.ContainsKey(code))
             {
                 var fieldName = property.Name.ToLower();
-                var attr = property.GetCustomAttribute<DataFieldAttribute>();
+                var attr = property.GetCustomAttribute<FieldAttribute>();
                 if (attr != null)
                 {
                     fieldName = attr.Name;

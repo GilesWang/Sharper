@@ -6,16 +6,9 @@ using System.Threading.Tasks;
 
 namespace Sharper.Attributes
 {
-    public class DataFieldAttribute : Attribute
+    public class FieldAttribute : Attribute
     {
         public string Name { get; set; }
-        public DataFieldAttribute()
-        {
-
-        }
-        public DataFieldAttribute(string name)
-        {
-            Name = name;
-        }
+        public bool Ignore { get; set; }
     }
 }
