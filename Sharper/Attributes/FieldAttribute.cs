@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Sharper.Attributes
 {
+    /// <summary>
+    /// 字段属性
+    /// </summary>
     public class FieldAttribute : Attribute
     {
         public string Name { get; set; }
